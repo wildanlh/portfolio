@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bde91a7d.css",
-    "main.js": "/portfolio/static/js/main.609e3af5.js",
+    "main.js": "/portfolio/static/js/main.81fe1539.js",
     "static/media/RESUME-WILDAN_LUQMANUL_HAKIM.pdf": "/portfolio/static/media/RESUME-WILDAN_LUQMANUL_HAKIM.558ee5dc67022308856c.pdf",
     "static/media/header-img.svg": "/portfolio/static/media/header-img.fcfee70ab2d83571b32a35da6f47c03c.svg",
     "static/media/healclin.png": "/portfolio/static/media/healclin.9e0462148553de380148.png",
@@ -29,10 +29,10 @@
     "static/media/nav-icon1.svg": "/portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/intellij.svg": "/portfolio/static/media/intellij.09d946ad40c81de2542ed4562aba71d0.svg",
     "main.bde91a7d.css.map": "/portfolio/static/css/main.bde91a7d.css.map",
-    "main.609e3af5.js.map": "/portfolio/static/js/main.609e3af5.js.map"
+    "main.81fe1539.js.map": "/portfolio/static/js/main.81fe1539.js.map"
   },
   "entrypoints": [
     "static/css/main.bde91a7d.css",
-    "static/js/main.609e3af5.js"
+    "static/js/main.81fe1539.js"
   ]
 }
