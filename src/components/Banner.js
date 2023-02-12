@@ -82,13 +82,14 @@ export const Banner = () => {
                   </h1>
                   <span>About Me</span>
                   <p>
-                    Dedicated student, I have good work and communication at
-                    teams, I always to learn from mistakes to make better ones,
-                    experienced in Website Development, Android Application
-                    Development and UI/UX Design. I am looking for experience at
-                    intership to improve my skills and connection with new
-                    people in the scope of work. I will perform the best of me
-                    for the company.
+                    I am a dedicated student with strong teamwork and
+                    communication skills. I believe in always learning from my
+                    mistakes to continually improve. I have experience in
+                    Website Development, Android Application Development, and
+                    UI/UX Design. I am seeking an internship opportunity to
+                    enhance my skills and make connections with new people in
+                    the field of work. I am committed to giving my best to the
+                    company.
                   </p>
                   <button
                     onClick={() => openInNewTab("https://youtu.be/vx64SjqJ9HA")}
