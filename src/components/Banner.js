@@ -86,10 +86,9 @@ export const Banner = () => {
                     communication skills. I believe in always learning from my
                     mistakes to continually improve. I have experience in
                     Website Development, Android Application Development, and
-                    UI/UX Design. I am seeking an internship opportunity to
-                    enhance my skills and make connections with new people in
-                    the field of work. I am committed to giving my best to the
-                    company.
+                    UI/UX Design. I am seeking an work opportunity to enhance my
+                    skills and make connections with new people in the field of
+                    work. I am committed to giving my best to the company.
                   </p>
                   <button
                     onClick={() => openInNewTab("https://youtu.be/vx64SjqJ9HA")}
