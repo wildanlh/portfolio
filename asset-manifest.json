@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bde91a7d.css",
-    "main.js": "/portfolio/static/js/main.1651fcd5.js",
+    "main.js": "/portfolio/static/js/main.d3d40818.js",
     "static/media/RESUME-WILDAN_LUQMANUL_HAKIM.pdf": "/portfolio/static/media/RESUME-WILDAN_LUQMANUL_HAKIM.258bed6fc95cbf732958.pdf",
     "static/media/header-img.svg": "/portfolio/static/media/header-img.fcfee70ab2d83571b32a35da6f47c03c.svg",
+    "static/media/mow.png": "/portfolio/static/media/mow.d46ca7c5294b97dc4737.png",
     "static/media/healclin.png": "/portfolio/static/media/healclin.9e0462148553de380148.png",
     "static/media/kyn.png": "/portfolio/static/media/kyn.d7e9ae79d34f1cc06465.png",
     "static/media/cafecashier.png": "/portfolio/static/media/cafecashier.428b6edea9afc57dd27d.png",
@@ -11,6 +12,7 @@
     "static/media/tokosaham.png": "/portfolio/static/media/tokosaham.ca1a0dd57d4f0a095f1e.png",
     "static/media/abclearningcenter.png": "/portfolio/static/media/abclearningcenter.63bc03743938b02e6d8b.png",
     "static/media/abcjobs.png": "/portfolio/static/media/abcjobs.15d1155ff642cb56ada3.png",
+    "static/media/jumpstart.png": "/portfolio/static/media/jumpstart.558d7c7173da2191c106.png",
     "static/media/CentraNo2-Bold.ttf": "/portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
@@ -29,10 +31,10 @@
     "static/media/nav-icon1.svg": "/portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/intellij.svg": "/portfolio/static/media/intellij.09d946ad40c81de2542ed4562aba71d0.svg",
     "main.bde91a7d.css.map": "/portfolio/static/css/main.bde91a7d.css.map",
-    "main.1651fcd5.js.map": "/portfolio/static/js/main.1651fcd5.js.map"
+    "main.d3d40818.js.map": "/portfolio/static/js/main.d3d40818.js.map"
   },
   "entrypoints": [
     "static/css/main.bde91a7d.css",
-    "static/js/main.1651fcd5.js"
+    "static/js/main.d3d40818.js"
   ]
 }
