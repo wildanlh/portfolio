@@ -10,7 +10,8 @@ export default function Contact() {
         {/* Card Wrapper */}
         <div className="w-full max-w-4xl border border-white/10 bg-white/5 backdrop-blur-md rounded-2xl shadow-xl py-12 sm:py-16 px-6 sm:px-10 flex flex-col items-center text-center">
           <h1 className="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-white mb-8">
-            Let's create your next <br className="hidden sm:block" /> big idea.
+            Let&apos;s create your next <br className="hidden sm:block" /> big
+            idea.
           </h1>
 
           <ButtonAnimation href="mailto:wildanluqmanul@gmail.com">
