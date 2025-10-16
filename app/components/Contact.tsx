@@ -19,7 +19,7 @@ export default function Contact() {
 
           <p className="mt-6 text-sm sm:text-base text-gray-400 max-w-md">
             Available for collaboration, freelance, or full-time opportunities.
-            Let’s make something amazing together.
+            Let&apos;s make something amazing together.
           </p>
         </div>
       </div>
