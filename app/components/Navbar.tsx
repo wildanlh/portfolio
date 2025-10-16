@@ -108,7 +108,12 @@ export default function Navbar() {
                     onClick={() => scrollToSection(link.id)}
                     className="cursor-pointer font-bold group bg-transparent border-none outline-none"
                   >
-                    <div className="relative overflow-hidden">
+                    <motion.div
+                      initial={{ opacity: 0, y: -20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 1, ease: 'easeOut' }}
+                      className="relative overflow-hidden"
+                    >
                       <p
                         className={`duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] ${
                           activeSection === link.id
@@ -127,7 +132,7 @@ export default function Navbar() {
                       >
                         {link.title}
                       </p>
-                    </div>
+                    </motion.div>
                   </button>
                 ))}
               </div>
