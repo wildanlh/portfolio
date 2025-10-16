@@ -28,7 +28,7 @@ export const listProject = [
     title: "Dani Gym",
     category: "Landing Page",
     year: "2023",
-    image: "/assets/projects/dany-gym.png",
+    image: "/assets/projects/dani-gym.png",
     link: "https://wildanlh.github.io/dani-gym/",
     color: "bg-yellow-200",
   },
