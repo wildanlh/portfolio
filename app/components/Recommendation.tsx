@@ -20,7 +20,7 @@ export default function Recommendations() {
   return (
     <section
       id="recommendations"
-      className="w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 my-20 md:my-24 px-4 sm:px-6 md:px-10 lg:px-20 overflow-x-hidden"
+      className="w-full mx-auto container flex flex-col md:flex-row justify-center gap-10 md:gap-16 my-20 md:my-24 overflow-x-hidden"
     >
       {/* ===== Left Section ===== */}
       <div className="w-full md:w-1/3 text-center md:text-left">
@@ -55,11 +55,11 @@ export default function Recommendations() {
       {/* ===== Right Section (Testimonials) ===== */}
       <div className="w-full md:w-2/3 flex flex-col items-center">
         {/* Card */}
-        <div className="relative w-full h-[22rem] sm:h-[18rem] md:h-[20rem] lg:h-[22rem] flex justify-center overflow-hidden">
+        <div className="relative w-full flex justify-center overflow-visible">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
-              className="absolute w-full md:w-[90%] lg:w-[80%] h-full border border-white/20 rounded-2xl shadow-lg p-6 sm:p-8 flex flex-col justify-between backdrop-blur-md bg-white/5"
+              className="relative w-full md:w-[90%] lg:w-[80%] min-h-[20rem] sm:min-h-[22rem] lg:min-h-[24rem] border border-white/20 rounded-2xl shadow-lg p-6 sm:p-8 flex flex-col justify-between backdrop-blur-md bg-white/5"
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
@@ -85,7 +85,7 @@ export default function Recommendations() {
                 </p>
               </div>
 
-              <p className="mt-4 text-sm sm:text-base text-gray-200 flex-1 leading-relaxed">
+              <p className="mt-4 text-sm sm:text-base text-gray-200 flex-1 leading-relaxed break-words">
                 “{reccomendation[index].text}”
               </p>
 
