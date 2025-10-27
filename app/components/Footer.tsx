@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { HiOutlineMail } from 'react-icons/hi';
 import { SiGithub, SiInstagram } from 'react-icons/si';
 import { SlSocialLinkedin, SlSocialTwitter } from 'react-icons/sl';
+import { useT } from '../internalization/providers';
 
 const socialLogos = [
   {
@@ -32,6 +33,8 @@ const socialLogos = [
 ];
 
 export default function Footer() {
+  const t = useT();
+
   return (
     <footer
       className="
@@ -43,8 +46,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="text-center md:text-left text-xs sm:text-sm">
           <span>
-            &copy; {new Date().getFullYear()} Wildan Luqmanul Hakim. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} {t('footer.badge')}
           </span>
         </div>
 

@@ -5,14 +5,18 @@ import Image from 'next/image';
 import GlassSurface from '../animations/GlassSurface';
 import AnimatedContent from '../animations/AnimatedContent';
 import { FaUser, FaFolderOpen, FaEnvelope } from 'react-icons/fa';
-
-const navLinks = [
-  { id: 'about', title: 'About', icon: <FaUser /> },
-  { id: 'projects', title: 'Projects', icon: <FaFolderOpen /> },
-  { id: 'contact', title: 'Contact', icon: <FaEnvelope /> },
-];
+import LanguageSwitcher from '../internalization/language-switcher';
+import { useT } from '../internalization/providers';
 
 export default function Navbar() {
+  const t = useT();
+
+  const navLinks = [
+    { id: 'about', title: t('nav.about'), icon: <FaUser /> },
+    { id: 'projects', title: t('nav.project'), icon: <FaFolderOpen /> },
+    { id: 'contact', title: t('nav.contact'), icon: <FaEnvelope /> },
+  ];
+
   const { scrollY } = useScroll();
   const [activeSection, setActiveSection] = useState('about');
   const width = useTransform(scrollY, [0, 200], ['100%', '60%']);
@@ -61,21 +65,21 @@ export default function Navbar() {
     <>
       {/* ===== DESKTOP NAVBAR ===== */}
       <nav className="hidden md:flex fixed w-full top-0 z-40">
-        <div className="container mx-auto flex items-center justify-center py-8 text-white font-bold">
+        <div className="container mx-auto flex items-center justify-center py-8 text-white font-bold overflow-visible">
           <motion.div
             style={{
               width,
               borderRadius: 999,
               height: 50,
             }}
-            className="flex justify-center"
+            className="flex justify-center overflow-visible"
           >
             <GlassSurface
               width={'100%'}
               height={50}
               borderRadius={50}
               backgroundOpacity={0.8}
-              className="flex items-center justify-between px-6"
+              className="flex items-center justify-between px-6 overflow-visible"
             >
               {/* Logo */}
               <AnimatedContent
@@ -136,6 +140,16 @@ export default function Navbar() {
                   </button>
                 ))}
               </div>
+
+              {/* Language Switcher */}
+              <motion.div
+                className="relative overflow-visible cursor-pointer"
+                initial={{ y: -30 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 1, ease: 'easeOut', delay: 0.3 }}
+              >
+                <LanguageSwitcher />
+              </motion.div>
             </GlassSurface>
           </motion.div>
         </div>
@@ -146,14 +160,14 @@ export default function Navbar() {
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.4, ease: 'easeOut' }}
-        className="fixed bottom-3 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-sm md:hidden"
+        className="fixed bottom-3 left-1/2 -translate-x-1/2 z-40 w-[90%] max-w-sm md:hidden overflow-visible"
       >
         <GlassSurface
           width={'100%'}
-          height={60}
+          height={65}
           borderRadius={50}
           backgroundOpacity={0.9}
-          className="flex justify-around items-center text-white font-semibold px-5"
+          className="flex justify-around items-center text-white font-semibold px-5 relative overflow-visible"
         >
           {navLinks.map((link) => (
             <button
@@ -177,6 +191,18 @@ export default function Navbar() {
           ))}
         </GlassSurface>
       </motion.nav>
+
+      {/* ===== MOBILE LANGUAGE SWITCHER (TOP RIGHT FLOATING) ===== */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8, y: -20 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
+        className="fixed top-5 right-5 z-50 md:hidden"
+      >
+        <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-full p-3 shadow-lg transition-all duration-300 ease-out">
+          <LanguageSwitcher />
+        </div>
+      </motion.div>
     </>
   );
 }

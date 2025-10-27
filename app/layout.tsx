@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Figtree, Roboto } from 'next/font/google';
 import './globals.css';
+import { headers } from 'next/headers';
 
 // === FONT SETUP ===
 const figTree = Figtree({
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Wildan Luqmanul Hakim' }],
   creator: 'Wildan Luqmanul Hakim',
-  metadataBase: new URL('https://wildan.dev'),
+  metadataBase: new URL('https://wildan.com'),
 
   // === FAVICON ===
   icons: {
