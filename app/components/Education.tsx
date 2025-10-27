@@ -80,7 +80,7 @@ export default function Education() {
           transition={{ duration: 1.2, delay: 0.5, ease: 'easeOut' }}
           className="w-full md:w-1/2 space-y-4"
         >
-          {educations?.map((edu: EducationItem, idx: number) => (
+          {educations.map((edu: EducationItem, idx: number) => (
             <motion.div
               key={idx}
               className="collapse bg-[#111827]/50 backdrop-blur-md rounded-xl border border-white/10 transition-all duration-300 hover:bg-[#1f2937]/60"

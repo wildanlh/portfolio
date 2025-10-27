@@ -14,10 +14,8 @@ async function loadMessages(locale: 'en' | 'id' | 'ja') {
     return (await import(`../internalization/${locale}.json`))
       .default as Record<string, string>;
   } catch {
-    return (await import(`../internalization/en.json`)).default as Record<
-      string,
-      string
-    >;
+    return (await import(`../internalization/en.json`))
+      .default as unknown as Record<string, string>;
   }
 }
 
