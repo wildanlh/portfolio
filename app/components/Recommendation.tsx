@@ -1,6 +1,3 @@
-'use client';
-
-import Image from 'next/image';
 import GradientText from '../animations/GradientText';
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';

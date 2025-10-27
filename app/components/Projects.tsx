@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import GradientText from '../animations/GradientText';
 import Link from 'next/link';
@@ -12,7 +10,7 @@ export default function Projects() {
   const listProject = t('project.list') as unknown as any[];
 
   const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
+  useScroll({
     target: ref,
     offset: ['start 85%', 'end start'],
   });

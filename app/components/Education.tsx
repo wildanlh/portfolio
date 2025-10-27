@@ -1,5 +1,3 @@
-'use client';
-
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import GradientText from '../animations/GradientText';
@@ -11,7 +9,6 @@ export default function Education() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
-  // Ambil data education dari file i18n JSON
   const educations = t('education.list') as unknown as any[];
 
   return (
