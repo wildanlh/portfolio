@@ -6,8 +6,10 @@ import SplitText from '../animations/SplitText';
 import Particles from '../backgrounds/particles';
 import Skills from './Skills';
 import { motion } from 'motion/react';
+import { useT } from '../internalization/providers';
 
 export default function Hero() {
+  const t = useT();
   return (
     <FadeContent
       blur={true}
@@ -50,8 +52,9 @@ export default function Hero() {
           {/* Nama */}
           <SplitText
             tag="h1"
-            text="Wildan Luqmanul Hakim"
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-center"
+            text={t('hero.name')}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-center
+             [text-shadow:0_0_30px_rgba(0,170,255,0.4),0_0_60px_rgba(0,170,255,0.15)]"
             delay={100}
             duration={1}
             ease="power3.out"
@@ -70,12 +73,12 @@ export default function Hero() {
             showBorder={false}
             className="text-lg sm:text-2xl md:text-3xl mt-3"
           >
-            Software Engineer
+            <b>{t('hero.title')}</b>
           </GradientText>
 
           {/* Deskripsi */}
           <ShinyText
-            text="Passionate with creative, attractive and responsive design."
+            text={t('hero.description')}
             disabled={false}
             speed={3}
             className="text-xs sm:text-sm md:text-base mt-2 px-4 sm:px-8"
