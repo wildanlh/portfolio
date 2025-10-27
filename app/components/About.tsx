@@ -1,5 +1,3 @@
-'use client';
-
 import { useT } from '../internalization/providers';
 import GradientText from '../animations/GradientText';
 import { motion, useInView } from 'framer-motion';

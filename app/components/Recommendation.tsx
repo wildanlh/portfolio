@@ -1,6 +1,6 @@
 import GradientText from '../animations/GradientText';
 import { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence, useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { reccomendation } from '@/constant/constant';
 import ShinyText from '../animations/ShinyText';
 import { useT } from '../internalization/providers';

@@ -5,9 +5,19 @@ import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { useT } from '../internalization/providers';
 
+interface ProjectItem {
+  id: number;
+  title: string;
+  category: string;
+  year: string;
+  image: string;
+  link: string;
+  color: string;
+}
+
 export default function Projects() {
   const t = useT();
-  const listProject = t('project.list') as unknown as any[];
+  const listProject = t('project.list') as unknown as ProjectItem[];
 
   const ref = useRef<HTMLDivElement>(null);
   useScroll({
