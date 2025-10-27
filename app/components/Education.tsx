@@ -4,12 +4,19 @@ import GradientText from '../animations/GradientText';
 import ShinyText from '../animations/ShinyText';
 import { useT } from '../internalization/providers';
 
+interface EducationItem {
+  title: string;
+  subtitle: string;
+  year: string;
+  details: string[];
+}
+
 export default function Education() {
   const t = useT();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
-  const educations = t('education.list') as unknown as any[];
+  const educations = t('education.list') as unknown as EducationItem[];
 
   return (
     <section
@@ -73,7 +80,7 @@ export default function Education() {
           transition={{ duration: 1.2, delay: 0.5, ease: 'easeOut' }}
           className="w-full md:w-1/2 space-y-4"
         >
-          {educations?.map((edu: any, idx: number) => (
+          {educations?.map((edu: EducationItem, idx: number) => (
             <motion.div
               key={idx}
               className="collapse bg-[#111827]/50 backdrop-blur-md rounded-xl border border-white/10 transition-all duration-300 hover:bg-[#1f2937]/60"
